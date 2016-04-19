@@ -7,23 +7,33 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 public class Person {
-    private String name;
+    private String lastName;
+    private String fistName;
     private String mail;
 
     public Person() {
     }
 
-    public Person(String name, String mail) {
-        this.name = name;
+    public Person(String lastName, String fistName, String mail) {
+        this.lastName = lastName;
+        this.fistName = fistName;
         this.mail = mail;
     }
 
     public String getName() {
-        return name;
+        return lastName;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getFistName() {
+        return fistName;
+    }
+
+    public void setFistName(String fistName) {
+        this.fistName = fistName;
     }
 
     public String getMail() {
@@ -36,6 +46,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return name;
+        return lastName;
     }
 }
