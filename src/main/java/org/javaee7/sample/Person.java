@@ -9,14 +9,16 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Person {
     private String lastName;
     private String fistName;
+    private Integer age;
     private String mail;
 
     public Person() {
     }
 
-    public Person(String lastName, String fistName, String mail) {
+    public Person(String lastName, String fistName, Integer age, String mail) {
         this.lastName = lastName;
         this.fistName = fistName;
+        this.age = age;
         this.mail = mail;
     }
 
@@ -34,6 +36,14 @@ public class Person {
 
     public void setFistName(String fistName) {
         this.fistName = fistName;
+    }
+
+    public Integer getAge() {
+        return age;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
     }
 
     public String getMail() {
