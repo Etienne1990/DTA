@@ -3,7 +3,7 @@ package org.javaee7.sample;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * @author arungupta, eb
+ * @author arungupta, E.B
  */
 @XmlRootElement
 public class Person {
