@@ -4,7 +4,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author arungupta, eb
- * test comms
  */
 @XmlRootElement
 public class Person {
