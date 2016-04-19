@@ -9,6 +9,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Person {
     private String name;
     private String mail;
+    private String address;
 
     public Person() {
     }
@@ -32,6 +33,14 @@ public class Person {
 
     public void setMail(String mail) {
         this.mail = mail;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
     }
 
     @Override
